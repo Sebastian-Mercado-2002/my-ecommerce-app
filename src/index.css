@@ -1,0 +1,120 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 80px; 
+}
+
+:root {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  /* Otros estilos de :root... */
+}
+
+/* Estilos para los filtros y productos */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-container select {
+  margin-right: 10px;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px; 
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px; 
+}
+
+
+/* Estilos para los enlaces */
+a {
+  font-weight: 500;
+  color: #3FFFF6; 
+  text-decoration: inherit;
+}
+a:hover {
+  color: #3FFFF6;
+}
+
+
+body {
+  margin: 0;
+  /* display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh;
+  text-align: center; */
+  padding-top: 80px; 
+}
+
+h1 {
+  font-family: 'Rockwell', serif;
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: #FFC53F; 
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+    color: #3FFFF6; 
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 999;
+  display: flex;
+  justify-content: center; 
+}
+
+

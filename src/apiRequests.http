@@ -1,0 +1,41 @@
+GET https://api.escuelajs.co/api/v1/products
+
+###Register
+POST https://api.escuelajs.co/api/v1/users/
+Content-Type: application/json
+
+{
+  "name": "Ejemplo Usuario",
+  "email": "ejemplo@usuario.com",
+  "password": "miPassword",
+  "role": "admin",
+  "avatar": "https://example.com/avatar.jpg"
+}
+
+###Login
+POST https://api.escuelajs.co/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "john@mail.com",
+  "password": "changeme"
+}
+
+
+###ProductCreate
+POST https://api.escuelajs.co/api/v1/products/
+Content-Type: application/json
+
+{
+  "title": "New Product",
+  "price": 10,
+  "description": "A description",
+  "categoryId": 1,
+  "images": ["https://placeimg.com/640/480/any"]
+}
+
+
+
+
+
+
